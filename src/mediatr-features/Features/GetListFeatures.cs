@@ -6,12 +6,12 @@ namespace mediatr_features.Features
 {
     public class GetListFeatures
     {
-        public class Query : IRequest<IList<WeatherForecast>>
+        public class Query : IRequest<WeatherForecastResponse>
         {
             public Guid Id { get; set; }
         }
 
-        public class QueryHandler : IRequestHandler<Query, IList<WeatherForecast>>
+        public class QueryHandler : IRequestHandler<Query, WeatherForecastResponse>
         {
             private readonly IMapper<IList<WeatherCondition>, IList<WeatherForecast>> _mapper;
             private readonly IList<WeatherCondition> _weatherConditions = new List<WeatherCondition>()
@@ -32,9 +32,13 @@ namespace mediatr_features.Features
             {
                 _mapper = mapper;
             }
-            public async Task<IList<WeatherForecast>> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<WeatherForecastResponse> Handle(Query request, CancellationToken cancellationToken)
             {
-                return await _mapper.Map(_weatherConditions);
+                return await Task.FromResult(new WeatherForecastResponse
+                {
+                    WeatherForecast = await _mapper.Map(_weatherConditions),
+                    RequestId = request.Id
+                });
             }
         }
     }

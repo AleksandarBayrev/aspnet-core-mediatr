@@ -18,7 +18,7 @@ namespace aspnet_core_mediatr.Controllers
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        public async Task<IList<WeatherForecast>> Get()
+        public async Task<WeatherForecastResponse> Get()
         {
             var query = new GetListFeatures.Query
             {
