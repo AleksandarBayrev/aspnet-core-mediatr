@@ -1,5 +1,5 @@
 using MediatR;
-using mediatr_features.Queries;
+using mediatr_features.Features;
 using Microsoft.AspNetCore.Mvc;
 using models;
 

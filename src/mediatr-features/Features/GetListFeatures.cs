@@ -2,7 +2,7 @@
 using MediatR;
 using models;
 
-namespace mediatr_features.Queries
+namespace mediatr_features.Features
 {
     public class GetListFeatures
     {

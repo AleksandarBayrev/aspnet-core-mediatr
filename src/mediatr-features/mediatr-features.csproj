@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Queries\GetListFeatures.cs~RF1226a50.TMP" />
+    <None Remove="Features\GetListFeatures.cs~RF1226a50.TMP" />
   </ItemGroup>
 
   <ItemGroup>
