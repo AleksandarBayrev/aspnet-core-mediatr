@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet-core-mediatr", "aspnet-core-mediatr\aspnet-core-mediatr.csproj", "{A39F2FDC-B48B-4535-81DE-D331383C1B6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet-core-mediatr", "src\aspnet-core-mediatr\aspnet-core-mediatr.csproj", "{A39F2FDC-B48B-4535-81DE-D331383C1B6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mediatr-features", "mediatr-features\mediatr-features.csproj", "{F755FEC8-571A-423B-89CB-FADED219151C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mediatr-features", "src\mediatr-features\mediatr-features.csproj", "{F755FEC8-571A-423B-89CB-FADED219151C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "services", "services\services.csproj", "{A82BA703-449D-477F-8980-8B9D8B498749}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "services", "src\services\services.csproj", "{A82BA703-449D-477F-8980-8B9D8B498749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interfaces", "interfaces\interfaces.csproj", "{7AF84652-01A4-4B7A-A4D6-0AE933660747}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interfaces", "src\interfaces\interfaces.csproj", "{7AF84652-01A4-4B7A-A4D6-0AE933660747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "models", "models\models.csproj", "{93A4687F-0B98-478A-AF19-CFD168FD5AB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "models", "src\models\models.csproj", "{93A4687F-0B98-478A-AF19-CFD168FD5AB1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1436A4C3-96DF-4E90-83A1-38175B1DE479}"
 	ProjectSection(SolutionItems) = preProject
